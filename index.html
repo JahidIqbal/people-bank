@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Bank</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-8">Bro,<span class="font-bold text-blue-600">Money</span> is Power!!</h1>
+    </header>
+    <main class="w-3/4 mx-auto ">
+        <section class="mt-8">
+            <!-- balance and transition -->
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-green-300 p-8 rounded text-center">
+                    <h2 class="text-2xl ">Installment</h2>
+                    <h4 class="text-4xl">$<span id="Install-total">00</span></h4>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="bg-purple-300 p-8 rounded text-white text-center">
+                    <h2 class="text-2xl ">Cashout</h2>
+                    <h4 class="text-4xl">$<span id="Cashout-total">00</span></h4>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="bg-blue-300 p-8 rounded text-center ">
+                    <h2 class="text-2xl ">Balance</h2>
+                    <h4 class="text-4xl">$<span id="Balance-total">1200</span></h4>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- installment and cashout -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4 ">
+                <div class="bg-red-200  p-8 rounded ">
+                    <h3 class="text-2xl">Your Installment</h3>
+                    <div>
+                        <input id="Installment-input" class="border block border-gray-200 rounded w-3/4 px-2 mb-4 "
+                            placeholder="$ you want to install" type="text">
+                        <button id="Installment-button"
+                            class="bg-pink-600 px-7 py-2 rounded font-medium text-white">Install</button>
+                    </div>
+                </div>
+                <div class="bg-yellow-200  p-8 rounded ">
+                    <h3 class="text-2xl">Your Cashout</h3>
+                    <div>
+                        <input id="Cashout-input" class="border block border-gray-200 rounded w-3/4 px-2 mb-4 "
+                            placeholder="$ you want to cashout" type="text">
+                        <button id="Cashout-button"
+                            class="bg-pink-600 px-4 py-2 rounded font-medium text-white">Cashout</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="js/people-bank.js"></script>
+</body>
+
+</html>
